@@ -1,17 +1,25 @@
 # agent-eval-cicd-pipeline
 
-CI/CD and evaluation pipeline for agent quality gates.
+CI/CD and evaluation pipeline for shipping reliable agent updates.
 
-## What This Project Does
+## Scope
 
-This repository provides infrastructure primitives for production-grade AI agent systems.
+Eval suites, regression gates, and deployment promotion policies.
 
-## Core Capabilities
+## Capabilities
 
-- Secure service boundaries
-- Scalable runtime operations
-- Auditable decision and tool execution paths
-- Extensible APIs for integration
+- Eval suites, regression gates, and deployment promotion policies.
+- Dataset versioning and benchmark lineage for reproducible scoring.
+- PR checks integrating quality, safety, and cost thresholds.
+- Automated release notes and change-risk classification.
+
+## Repository Layout
+
+- `src/main.py` entrypoint and lightweight service bootstrap
+- `src/project_profile.py` canonical project metadata
+- `src/service_contract.py` baseline domain contract shape
+- `tests/` smoke and contract tests
+- `docs/` architecture and roadmap
 
 ## Quick Start
 
